@@ -77,17 +77,17 @@ def extract_text_from_pdf(uploaded_file):
 st.set_page_config(page_title="ATS Resume Expert", layout="wide")
 st.title("📄 ATS Resume Tracking System")
 
-job_description = st.text_area("📌 Job Description", height=200)
-uploaded_file = st.file_uploader("📤 Upload Resume (PDF only)", type=["pdf"])
+job_description = st.text_area(" Job Description", height=200)
+uploaded_file = st.file_uploader(" Upload Resume (PDF only)", type=["pdf"])
 
 if uploaded_file:
     st.success("Resume uploaded successfully")
 
 col1, col2 = st.columns(2)
 with col1:
-    submit1 = st.button("🔍 Tell Me About the Resume")
+    submit1 = st.button(" Tell Me About the Resume")
 with col2:
-    submit2 = st.button("📊 Percentage Match")
+    submit2 = st.button(" Percentage Match")
 
 # ================= PROMPTS =================
 prompt_review = """
